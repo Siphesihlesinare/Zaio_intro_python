@@ -1,0 +1,6 @@
+sentence = input("Enter any sentence:  ")
+remove = input("Enter word/words to be removed: ")
+word_list = sentence.split()
+wanted_sentence = ' '.join([i for i in word_list if i not in remove])
+acronym = ''.join(remove[0] for remove in wanted_sentence.upper().split())
+print(acronym)
